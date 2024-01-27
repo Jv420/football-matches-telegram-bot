@@ -7,7 +7,7 @@ const BOT_TOKEN = process.env.TOKEN;
 const CHANNEL_ID = process.env.CHAT_ID;
 const BASE_URL = 'https://www.bbc.com/sport/football/scores-fixtures';
 
-const bot = new Telegraf(BOT_TOKEN);
+const bot = new Telegraf(process.env.TOKEN);
 
 bot.start((ctx) => {
   ctx.reply('Welcome! Please select a date:', Markup.inlineKeyboard([
