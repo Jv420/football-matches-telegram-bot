@@ -121,13 +121,12 @@ require('dotenv').config();
     }
   };
 
-  bot.launch();
-
   app.get('/', (req, res) => {
     res.send({message: 'Welcome to Footbal matches telegram bot API!'})
   })
   
   app.listen(PORT, () => {
     console.log(`App listening on port ${PORT}`)
+    bot.launch();
   })
   
