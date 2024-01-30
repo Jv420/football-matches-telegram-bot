@@ -5,5 +5,5 @@ module.exports = async (req, res) => {
     res.status(405).send('Method Not Allowed');
     return;
   }
-    res.status(200).json({message: "This is a Footbal matches scores fetching API" });
+    res.status(200).json({message: "This is a Football matches scores fetching API" });
 };
