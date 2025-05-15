@@ -25,8 +25,8 @@ Object.entries(dateActions).forEach(([action, offset]) => {
     const dateString = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
 
     const fetchUrl = action === 'DATE_YESTERDAY' 
-      ? `https://football-matches-telegram-bot.vercel.app/api/fetchMatchesForYesterday?date=${dateString}`
-      : `https://football-matches-telegram-bot.vercel.app/api/fetchMatchesForDate?date=${dateString}`;
+      ? `https://football-matches-telegram-bot-eight.vercel.app/api/fetchMatchesForYesterday?date=${dateString}`
+      : `https://football-matches-telegram-bot-eight.vercel.app/api/fetchMatchesForDate?date=${dateString}`;
 
     try {
       const response = await fetch(fetchUrl);
